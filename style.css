@@ -1,0 +1,85 @@
+#progressBar {
+    display: none; /* Hide progress bar initially */
+    height: 10px;
+    background-color: rgba(255, 255, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+#progressBar::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 0%;
+    background-color: #4c93ba;
+    border-radius: 5px;
+}
+
+#quizWrap {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#quizQn {
+    padding: 20px;
+    background: #4c93ba;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 10px;
+}
+
+#quizAns {
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+}
+
+#quizAns input[type=radio] {
+    display: none;
+}
+
+#quizAns label {
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#quizAns label.correct {
+    background: #d8ffc4;
+    border: 1px solid #60a03f;
+}
+
+#quizAns label.wrong {
+    background: #ffe8e8;
+    border: 1px solid #c78181;
+}
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    h1 {
+        font-family: "Bangers", system-ui;
+        color: white;
+        font-weight: 800;
+        letter-spacing: 2px;
+        text-shadow: 0 0 5px rgba(255, 255, 0, 0.5); /* Yellow shadow */
+    }
+}
+
+.wrap {
+    width: 600px;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.4);
+}
